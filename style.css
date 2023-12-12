@@ -1,0 +1,129 @@
+:root {
+  --btn-color:blue;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image:url();
+}
+.container{
+  height: 100vh;
+}
+h1{
+  color: brown;
+  padding: 20px 0 0;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+  padding-left: 20px;
+}
+li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+
+}
+#todo{
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  background-color: antiquewhite;
+  border: 1px solid #606060;
+  margin:  0 0 0 20px;
+  /* display: block; */
+}
+#lists{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 85vh;
+  overflow: auto;
+}
+.added{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px;
+  /* max-width: 70%; */
+}
+.added span{
+  display: flex ;
+  align-items: center;
+  gap: 10px;
+}
+input[type='submit']{
+  width: 15%;
+  height: 40px;
+  text-align: center;
+  margin: 10px auto 0;
+  outline: none;
+  /* display: block; */
+}
+input[type='checkbox']{
+  width: 30px;
+  height: 30px;
+
+}
+#save{
+  background-color: chartreuse;
+  border: 1px solid chartreuse;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+button{
+  /* width: 60px; */
+  height: 35px;
+  background-color: red;
+  border: red solid 1px;
+  border-radius: 7px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+input[type='Button']{
+  background-color: green;
+  width: 50px;
+  height: 35px;
+  border-radius: 7px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border: green 1px solid;
+}
+form{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width:768px){
+  #todo{
+    margin-left: 10px;
+  }
+  h1{
+    padding-top: 10px;
+  }
+  #lists{
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
+  .added{
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .added span{
+    margin-left: 0;
+    flex-direction: column;
+  }
+  #save{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}
