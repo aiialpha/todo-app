@@ -107,7 +107,8 @@ function getValues(){
   let values = localStorage.getItem('load')
   Arr = JSON.parse(values)
   let pValues =  JSON.parse(values)
-  if (yourArray !== null && yourArray !== undefined) {
+  console.log(pValues)
+  if (pValues !== null && pValues !== undefined) {
   pValues.forEach(element => {
     let myHtml = `<div class='added'> <li>${element}</li> <span><button onclick=del(this)>Remove</button> <input type='Button' onclick=edit(this) value="Edit"></button></span> </div>`;
     list1.insertAdjacentHTML('beforeend', myHtml)
